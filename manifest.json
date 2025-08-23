@@ -1,0 +1,8 @@
+{
+  "name": "Easter Calculator",
+  "short_name": "Easter Calculator",
+  "start_url": "/easter-calculator/index.html",
+  "display": "standalone",
+  "background_color": "#ecfeff",
+  "theme_color": "#0e7490"
+}

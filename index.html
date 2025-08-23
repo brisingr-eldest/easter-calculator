@@ -3,14 +3,27 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
   <title>Easter Calculator</title>
 
   <script src="https://cdn.tailwindcss.com/"></script>
   <script src="main.js" defer></script>
 
+  <link rel="manifest" href="manifest.json" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
   <style>
+    body {
+      margin: 0;
+      padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+      height: 100vh;
+      height: calc(100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+
     input[type="text"] {
       /* Remove default browser styles for textboxes */
       -webkit-appearance: none;
