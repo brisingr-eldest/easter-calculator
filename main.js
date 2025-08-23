@@ -164,7 +164,7 @@ function compareDate(jahr, monat, tag) {
       return [msg, tense];
     }
 
-    msg = `In ${compYear}, Easter will be on ${readableMonth}, ${compDay}.`;
+    msg = `In ${compYear}, Easter will be on ${readableMonth} ${compDay}.`;
     tense = `future`;
     return [msg, tense];
   }
